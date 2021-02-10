@@ -1,0 +1,25 @@
+create database ProductFun;
+
+use ProductFun;
+
+create table Product(
+        Id  int auto_increment primary key,
+        IdSupplier int,
+        ICode int,
+        IName varchar(50) not null,
+        Description varchar(50)  not null,
+        FiscalCode int,
+        Specie varchar(50)  not null,
+        CreatedAt date,
+        CreatedBy varchar(50)  not null,
+        UpdateAt date,
+        UpdateBy varchar(50));
+        
+                
+
+     create table Supplier(
+        cod int auto_increment primary key,
+        CNPJ  varchar(20) not null,
+        CEP varchar(20) not null,
+        DateCreated date not null,
+        QRCode varchar(50)  not null);
